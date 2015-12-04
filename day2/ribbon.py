@@ -49,7 +49,6 @@ def calc_box(dim_line):
     return bow + length*2
 
 
-
 def parse_args():
     """
     Go go gadget simple arg parser!
