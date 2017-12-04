@@ -31,11 +31,9 @@ def get_pairs(arr):
 
 
 def even_division(pair):
-    (a, b) = pair
-    div = a/b
-    if int(div) == div:
-        return int(div)
-    div = b/a
+    x = max(pair)
+    y = min(pair)
+    div = x/y
     if int(div) == div:
         return int(div)
     return -1
@@ -56,5 +54,3 @@ if __name__ == "__main__":
     ss = _read_input(INPUT_FILE)
     print(calc_checksum(ss))
     print(even_divisor_sum(ss))
-    # for pair in get_pairs(['a', 'b', 'c', 'd', 'e']):
-    #     print(pair)
