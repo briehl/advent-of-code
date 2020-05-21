@@ -63,3 +63,7 @@ with open(infile_path) as infile:
 guards.sort(key=lambda g: g.total_sleep)
 g = guards[-1]
 print(g.guard_id * g.most_sleep)
+
+guards.sort(key=lambda g: max(g.timeline))
+g = guards[-1]
+print(g.guard_id * g.most_sleep)
