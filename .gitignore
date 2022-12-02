@@ -1,0 +1,4 @@
+node_modules/
+
+# I am crazy and doing 2022 in TypeScript/Node. So ignore the compiled JS files.
+2022/**/*.js
